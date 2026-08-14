@@ -1,0 +1,4 @@
+interface:
+  display_name: "NAMI Beauty Knowledge"
+  short_description: "Безопасные диалоги салона NAMI BEAUTY"
+  default_prompt: "Use $nami-knowledge-skill to reply to a NAMI BEAUTY guest in Russian."
