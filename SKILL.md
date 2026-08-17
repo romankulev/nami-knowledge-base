@@ -43,6 +43,7 @@ Read `00_MODEL_GUIDE.md` and exactly the most relevant topic source before reply
 | Source freshness or a conflict | `08_SOURCE_REGISTRY_AND_CONFLICTS.md` |
 | Discovery, objections, next-step chat patterns | `09_TELEGRAM_RECEPTION_DIALOGUE_REFERENCE.md` |
 | Verified internal MHS information, if that integration is configured | `docmost-mhs.md` |
+| Any booking intent, availability, schedule, appointment move/cancellation, or a connected client-table tool | `11_AI_AGENT_TABLE_TOOL.md` (also read `02_GUEST_DIALOGUES_AND_BOOKING.md`; read `04_SERVICES_AND_AVAILABILITY.md` when calculating an end time) |
 
 ## Non-negotiable operating rules
 
