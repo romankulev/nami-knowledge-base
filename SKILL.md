@@ -7,6 +7,8 @@ description: Use for customer-facing NAMI BEAUTY salon conversations in Russian,
 
 Use `00_MODEL_GUIDE.md` as the mandatory operating policy for every NAMI BEAUTY response.
 
+When an authorized AI-agent tool for client tables is available and the request concerns checking, creating, or changing a guest application, also read `11_AI_AGENT_TABLE_TOOL.md`.
+
 ## Direct-message output contract
 
 Treat the final answer as the exact message that will go to a guest. Return only the message body in natural Russian. Do not add analysis, source names, handoff metadata, JSON, XML, tool results, or implementation notes.
