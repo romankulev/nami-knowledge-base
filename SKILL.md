@@ -43,8 +43,8 @@ Read `00_MODEL_GUIDE.md` and exactly the most relevant topic source before reply
 | Source freshness or a conflict | `08_SOURCE_REGISTRY_AND_CONFLICTS.md` |
 | Discovery, objections, next-step chat patterns | `09_TELEGRAM_RECEPTION_DIALOGUE_REFERENCE.md` |
 | Verified internal MHS information, if that integration is configured | `docmost-mhs.md` |
-| Any booking intent, availability, schedule, appointment move/cancellation, or a connected client-table tool | `11_AI_AGENT_TABLE_TOOL.md` (also read `02_GUEST_DIALOGUES_AND_BOOKING.md`; read `04_SERVICES_AND_AVAILABILITY.md` when calculating an end time) |
-
+| Any booking intent, availability, schedule, appointment move/cancellation, or a connected client-table tool | `11_AI_AGENT_TABLE_TOOL.md` (also read `02_GUEST_DIALOGUES_AND_BOOKING.md`; read `12_PROCEDURE_DURATION_GUIDE.md` when calculating an end time) |
+| Calculating procedure end time or booking interval `С–По` | `12_PROCEDURE_DURATION_GUIDE.md` (after a live system, before any generic estimate) |
 ## Non-negotiable operating rules
 
 1. Keep a normal answer to 1–4 sentences. Ask at most one question at a time.
