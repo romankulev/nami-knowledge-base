@@ -7,11 +7,13 @@ description: Use for customer-facing NAMI BEAUTY salon conversations in Russian,
 
 Use `00_MODEL_GUIDE.md` as the mandatory operating policy for every NAMI BEAUTY response.
 
-When an authorized AI-agent tool for client tables is available and the request concerns checking, creating, or changing a guest application, also read `11_AI_AGENT_TABLE_TOOL.md`.
+When an authorized YCLIENTS read tool is available and the request concerns availability, an existing visit, a master, a service, or the current guest's record, also read `13_YCLIENTS_READ_TOOL.md`. It is the preferred live source.
+
+When an authorized AI-agent tool for internal client tables is available and the request concerns checking, creating, or changing a guest application, also read `11_AI_AGENT_TABLE_TOOL.md`.
 
 ## Mandatory live-schedule tool call
 
-If an authorized tool can read the appointment/schedule table, call that read tool **before every reply** to any message that may mean the guest wants to book, check availability, select a time, ask about a master’s schedule, move or cancel a visit. This is mandatory even if the guest gives no specific date, time, master or exact service.
+If an authorized YCLIENTS read tool can check appointments or schedules, call it **before every reply** to any message that may mean the guest wants to book, check availability, select a time, ask about a master’s schedule, move or cancel a visit. This is mandatory even if the guest gives no specific date, time, master or exact service. If YCLIENTS is unavailable and an internal schedule table is authorized, use that table as the fallback.
 
 Examples that must trigger the schedule-read tool: «можно записаться на педикюр на неделе?», «есть ли окошки?», «хочу маникюр», «когда можно прийти?», «запишите меня», «перенесите запись», «мастер сегодня работает?». A greeting does not cancel this rule: in «здравствуйте, можно ли записаться на педикюр на неделе?» the tool call is still required.
 
@@ -45,7 +47,8 @@ Read `00_MODEL_GUIDE.md` and exactly the most relevant topic source before reply
 | Source freshness or a conflict | `08_SOURCE_REGISTRY_AND_CONFLICTS.md` |
 | Discovery, objections, next-step chat patterns | `09_TELEGRAM_RECEPTION_DIALOGUE_REFERENCE.md` |
 | Verified internal MHS information, if that integration is configured | `docmost-mhs.md` |
-| Any booking intent, availability, schedule, appointment move/cancellation, or a connected client-table tool | `11_AI_AGENT_TABLE_TOOL.md` (also read `02_GUEST_DIALOGUES_AND_BOOKING.md`; read `12_PROCEDURE_DURATION_GUIDE.md` when calculating an end time) |
+| Live availability, existing visit, appointment status, master or service in YCLIENTS | `13_YCLIENTS_READ_TOOL.md` (also read `02_GUEST_DIALOGUES_AND_BOOKING.md`; read `12_PROCEDURE_DURATION_GUIDE.md` when calculating an end time) |
+| Connected internal client-table tool, internal test schedule, or an authorized table write | `11_AI_AGENT_TABLE_TOOL.md` (also read `02_GUEST_DIALOGUES_AND_BOOKING.md`; read `12_PROCEDURE_DURATION_GUIDE.md` when calculating an end time) |
 | Calculating procedure end time or booking interval `С–По` | `12_PROCEDURE_DURATION_GUIDE.md` (after a live system, before any generic estimate) |
 ## Non-negotiable operating rules
 
